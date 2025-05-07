@@ -4,53 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>图图壁纸 - 支持页面</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: {
-                            light: '#60a5fa',
-                            DEFAULT: '#3b82f6',
-                            dark: '#2563eb',
-                        },
-                        secondary: {
-                            light: '#93c5fd',
-                            DEFAULT: '#60a5fa',
-                            dark: '#3b82f6',
-                        },
-                        accent: {
-                            light: '#fcd34d',
-                            DEFAULT: '#f59e0b',
-                            dark: '#d97706',
-                        },
-                    }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body>
     <!-- 页面头部 -->
-    <header class="bg-gradient-to-r from-primary to-primary-dark text-white py-16 shadow-md">
-        <div class="container mx-auto px-4 text-center">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">图图壁纸</h1>
-            <p class="text-xl opacity-90">自动下载和管理必应每日壁纸的贴心工具</p>
+    <header>
+        <div class="container">
+            <h1>图图壁纸</h1>
+            <p>自动下载和管理必应每日壁纸的贴心工具</p>
         </div>
     </header>
     
-    <div class="container mx-auto px-4 py-12 max-w-5xl">
+    <main class="container">
         <!-- 应用介绍 -->
-        <section class="bg-white rounded-xl shadow-md p-6 mb-10">
-            <h2 class="text-2xl font-bold text-primary border-b border-gray-100 pb-3 mb-6">应用介绍</h2>
-            <p class="mb-8 text-lg">图图壁纸是一款自动下载和管理必应每日壁纸的小工具。让您的桌面与世界同步，每天醒来都能欣赏到全新的视觉盛宴。</p>
+        <section>
+            <h2>应用介绍</h2>
+            <p>图图壁纸是一款自动下载和管理必应每日壁纸的小工具。让您的桌面与世界同步，每天醒来都能欣赏到全新的视觉盛宴。</p>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="feature-grid">
                 <!-- 功能卡片 1 -->
-                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-accent hover:shadow-md transition duration-300">
-                    <h3 class="text-xl font-semibold text-accent-dark mb-3">自动获取壁纸</h3>
-                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <div class="feature-card">
+                    <h3>自动获取壁纸</h3>
+                    <ul>
                         <li>支持多地区壁纸选择</li>
                         <li>每天自动下载更新</li>
                         <li>可设置开机自启动</li>
@@ -58,9 +33,9 @@
                 </div>
                 
                 <!-- 功能卡片 2 -->
-                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-accent hover:shadow-md transition duration-300">
-                    <h3 class="text-xl font-semibold text-accent-dark mb-3">预览和管理</h3>
-                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <div class="feature-card">
+                    <h3>预览和管理</h3>
+                    <ul>
                         <li>点击或空格键查看大图</li>
                         <li>方向键切换壁纸</li>
                         <li>收藏喜欢的壁纸</li>
@@ -68,9 +43,9 @@
                 </div>
                 
                 <!-- 功能卡片 3 -->
-                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-accent hover:shadow-md transition duration-300">
-                    <h3 class="text-xl font-semibold text-accent-dark mb-3">壁纸切换模式</h3>
-                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <div class="feature-card">
+                    <h3>壁纸切换模式</h3>
+                    <ul>
                         <li>每日更新模式</li>
                         <li>随机切换模式</li>
                         <li>顺序切换模式</li>
@@ -78,9 +53,9 @@
                 </div>
                 
                 <!-- 功能卡片 4 -->
-                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-accent hover:shadow-md transition duration-300">
-                    <h3 class="text-xl font-semibold text-accent-dark mb-3">存储管理</h3>
-                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <div class="feature-card">
+                    <h3>存储管理</h3>
+                    <ul>
                         <li>可调整最大存储空间</li>
                         <li>自动清理旧壁纸</li>
                         <li>保留已收藏壁纸</li>
@@ -90,34 +65,34 @@
         </section>
         
         <!-- 常见问题 -->
-        <section class="bg-white rounded-xl shadow-md p-6 mb-10">
-            <h2 class="text-2xl font-bold text-primary border-b border-gray-100 pb-3 mb-6">常见问题 (FAQ)</h2>
+        <section>
+            <h2>常见问题 (FAQ)</h2>
             
-            <div class="space-y-6">
-                <div class="bg-gray-50 p-6 rounded-lg">
-                    <h3 class="text-lg font-semibold text-primary-dark mb-2">如何设置开机自启动？</h3>
-                    <p class="text-gray-700">打开应用后，点击菜单栏中的图图壁纸图标，在下拉菜单中选择"设置"，然后勾选"开机启动"选项。</p>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3>如何设置开机自启动？</h3>
+                    <p>在设置页面中勾选"开机启动"选项。</p>
                 </div>
                 
-                <div class="bg-gray-50 p-6 rounded-lg">
-                    <h3 class="text-lg font-semibold text-primary-dark mb-2">如何更改壁纸来源国家/地区？</h3>
-                    <p class="text-gray-700">在设置页面的"壁纸来源"下拉菜单中，可以选择您想要的国家或地区：中国、澳大利亚、巴西、加拿大、德国、法国、日本、新西兰、美国、英国。</p>
+                <div class="faq-item">
+                    <h3>如何更改壁纸来源国家/地区？</h3>
+                    <p>在设置页面的"壁纸来源"下拉菜单中，可以选择您想要的国家或地区：中国、澳大利亚、巴西、加拿大、德国、法国、日本、新西兰、美国、英国。</p>
                 </div>
                 
-                <div class="bg-gray-50 p-6 rounded-lg">
-                    <h3 class="text-lg font-semibold text-primary-dark mb-2">如何调整存储空间大小？</h3>
-                    <p class="text-gray-700">在设置页面中找到"最大存储空间"选项，默认为1024MB，您可以根据自己的需求进行调整。</p>
+                <div class="faq-item">
+                    <h3>如何调整存储空间大小？</h3>
+                    <p>在设置页面中找到"最大存储空间"选项，默认为1024MB，您可以根据自己的需求进行调整。</p>
                 </div>
                 
-                <div class="bg-gray-50 p-6 rounded-lg">
-                    <h3 class="text-lg font-semibold text-primary-dark mb-2">如何收藏喜欢的壁纸？</h3>
-                    <p class="text-gray-700">在预览壁纸时，点击界面下方的"收藏"按钮即可将当前壁纸添加到收藏夹，收藏的壁纸不会被自动清理。</p>
+                <div class="faq-item">
+                    <h3>如何收藏喜欢的壁纸？</h3>
+                    <p>在预览壁纸时，点击界面下方的"收藏"按钮即可将当前壁纸添加到收藏夹，收藏的壁纸不会被自动清理。</p>
                 </div>
                 
-                <div class="bg-gray-50 p-6 rounded-lg">
-                    <h3 class="text-lg font-semibold text-primary-dark mb-2">应用支持哪些快捷键？</h3>
-                    <div class="text-gray-700">
-                        <ul class="list-disc list-inside space-y-1">
+                <div class="faq-item">
+                    <h3>应用支持哪些快捷键？</h3>
+                    <div>
+                        <ul>
                             <li>预览壁纸：点击图片或按空格键</li>
                             <li>关闭预览：空格键</li>
                             <li>上一张壁纸：← 键</li>
@@ -129,38 +104,38 @@
         </section>
         
         <!-- 使用技巧 -->
-        <section class="bg-white rounded-xl shadow-md p-6 mb-10">
-            <h2 class="text-2xl font-bold text-primary border-b border-gray-100 pb-3 mb-6">使用技巧</h2>
+        <section>
+            <h2>使用技巧</h2>
             
-            <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg">
-                <h3 class="text-xl font-semibold text-primary-dark mb-4">获得最佳体验</h3>
-                <ul class="space-y-3">
-                    <li class="flex items-start">
-                        <svg class="h-6 w-6 text-accent-dark mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div class="tips-container">
+                <h3>获得最佳体验</h3>
+                <ul class="tips-list">
+                    <li>
+                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                         <span>设置开机自启，确保每天都能自动更新壁纸</span>
                     </li>
-                    <li class="flex items-start">
-                        <svg class="h-6 w-6 text-accent-dark mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <li>
+                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                         <span>尝试不同国家/地区的壁纸源，体验不同文化的视觉风格</span>
                     </li>
-                    <li class="flex items-start">
-                        <svg class="h-6 w-6 text-accent-dark mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <li>
+                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                         <span>收藏喜欢的壁纸，它们不会被自动清理</span>
                     </li>
-                    <li class="flex items-start">
-                        <svg class="h-6 w-6 text-accent-dark mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <li>
+                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                         <span>根据自己的需求调整存储空间大小</span>
                     </li>
-                    <li class="flex items-start">
-                        <svg class="h-6 w-6 text-accent-dark mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <li>
+                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                         <span>使用壁纸切换模式，让桌面保持新鲜感</span>
@@ -170,34 +145,34 @@
         </section>
         
         <!-- 联系我们 -->
-        <section class="bg-white rounded-xl shadow-md p-6 mb-10">
-            <h2 class="text-2xl font-bold text-primary border-b border-gray-100 pb-3 mb-6">联系我们</h2>
+        <section>
+            <h2>联系我们</h2>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-accent hover:shadow-md transition duration-300">
-                    <h3 class="text-xl font-semibold text-accent-dark mb-3">在线反馈</h3>
-                    <p class="text-gray-700 mb-4">如果您有任何问题、建议或反馈，欢迎通过我们的在线反馈系统告诉我们。</p>
-                    <a href="https://support.qq.com/products/723755" target="_blank" class="inline-block bg-primary hover:bg-primary-dark text-white px-6 py-2 rounded-lg transition duration-300">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>在线反馈</h3>
+                    <p>如果您有任何问题、建议或反馈，欢迎通过我们的在线反馈系统告诉我们。</p>
+                    <a href="https://support.qq.com/products/723755" target="_blank" class="btn">
                         提交反馈
                     </a>
                 </div>
                 
-                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-accent hover:shadow-md transition duration-300">
-                    <h3 class="text-xl font-semibold text-accent-dark mb-3">邮件联系</h3>
-                    <p class="text-gray-700 mb-4">您也可以通过邮件与我们取得联系。</p>
-                    <a href="mailto:tutuwarestudio@gmail.com" class="inline-block bg-primary hover:bg-primary-dark text-white px-6 py-2 rounded-lg transition duration-300">
+                <div class="contact-card">
+                    <h3>邮件联系</h3>
+                    <p>您也可以通过邮件与我们取得联系。</p>
+                    <a href="mailto:tutuwarestudio@gmail.com" class="btn">
                         发送邮件
                     </a>
                 </div>
             </div>
         </section>
-    </div>
+    </main>
     
     <!-- 页脚 -->
-    <footer class="bg-gradient-to-r from-primary-dark to-primary text-white py-8">
-        <div class="container mx-auto px-4 text-center">
-            <p class="text-lg">&copy; 2025 图图壁纸</p>
-            <p class="text-sm mt-2 opacity-80">让您的桌面每天都充满新鲜感和视觉惊喜</p>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 图图壁纸</p>
+            <p>让您的桌面每天都充满新鲜感和视觉惊喜</p>
         </div>
     </footer>
 </body>
